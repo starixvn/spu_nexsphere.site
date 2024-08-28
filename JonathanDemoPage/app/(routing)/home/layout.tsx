@@ -5,8 +5,8 @@ import SideNav from '@/app/component/sidenav';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: 'CTS HomePage',
+    default: 'CTS HomePage',
   },
   description: 'The official Next.js Learn Dashboard built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),

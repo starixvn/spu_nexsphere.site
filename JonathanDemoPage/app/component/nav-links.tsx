@@ -2,6 +2,7 @@
 
 import {
   HomeIcon,
+  ShoppingBagIcon,
   ChartBarIcon,
   NewspaperIcon
 } from '@heroicons/react/24/outline';
@@ -16,8 +17,14 @@ import clsx from 'clsx';
 const links = [
   {
     name: 'Home',
-    href: '/home',
+    href: '/',
     icon: HomeIcon,
+    subLinks: [],
+  },
+  {
+    name: 'Invoices',
+    href: '/invoices',
+    icon: ShoppingBagIcon,
     subLinks: [],
   },
   {

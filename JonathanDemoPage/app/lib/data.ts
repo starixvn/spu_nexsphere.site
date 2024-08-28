@@ -217,7 +217,6 @@ export async function fetchFilteredCustomers(
       total_paid: formatCurrency(customer.total_paid),
     }));
 
-    await delay(1000);
     return customers;
   } catch (err) {
     console.error('Database Error:', err);
