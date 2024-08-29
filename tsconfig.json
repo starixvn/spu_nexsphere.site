@@ -21,14 +21,7 @@
         "noImplicitAny": false,
         "baseUrl": ".",
         "paths": {
-            "@/components/*": ["src/components/*"],
-            "@/styles/*": ["src/styles/*"],
-            "@/config/*": ["src/config/*"],
-            "@/utils/*": ["src/utils/*"],
-            "@/data/*": ["src/data/*"],
-            "@/store/*": ["src/store/*"],
-            "@/interfaces/*": ["src/interfaces/*"],
-            "@/contexts/*": ["src/contexts/*"]
+            "@/*": ["src/*"]
         },
         "plugins": [
             {"name": "next"}

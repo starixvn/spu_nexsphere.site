@@ -102,7 +102,7 @@ export default function Layout(props) {
             </main>
 
             {/*<!-- BACK-TO-TOP -->*/}
-            <BackToTop speed={700} easing="easeOut" />
+            {/* <BackToTop speed={700} easing="easeOut" /> */}
 
         </>
     )
