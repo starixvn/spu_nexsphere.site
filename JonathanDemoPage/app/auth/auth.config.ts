@@ -19,9 +19,7 @@ export const authConfig = {
   
       const isNeedAuth = pathsRequiringAuth.some((regex) => regex.test(pathname));
   
-      if (isRoot) return true;
-  
-      if (isNeedAuth) {
+      if (isRoot || isNeedAuth) {
         return isLoggedIn || false;
       }
   
