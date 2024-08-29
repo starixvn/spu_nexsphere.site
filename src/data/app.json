@@ -1,0 +1,32 @@
+{
+    "siteName": "Website Title",
+    "siteUrl": "http://localhost:3000",
+    "copyright": "Copyright &copy; Website Title 2024.  |  All rights reserved.",
+    "menu": [
+    {
+      "title": "Home",
+      "icon": false,
+      "link": "\/"
+    },
+    {
+      "title": "About",
+      "icon": false,
+      "link": "\/about.html"
+    },
+    {
+        "title": "Posts",
+        "icon": false,
+        "link": "/posts.html"
+    },
+    {
+      "title": "Sign In",
+      "icon": false,
+      "link": "\/sign-in.html"
+    },
+    {
+      "title": "Dashboard",
+      "icon": false,
+      "link": "\/dashboard\/index.html"
+    }
+  ]
+}
