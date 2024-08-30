@@ -11,14 +11,13 @@ export const authConfig = {
       // Kiểm tra yêu cầu favicon
       if (pathname === '/favicon.ico') return true;
   
-      console.log('authorized', pathname);
-  
       const isLoggedIn = !!auth?.user;
       const pathsRequiringAuth = [/^\/dashboard(\/.*)?$/, /^\/report(\/.*)?$/, /^\/invoices(\/.*)?$/];
+      const isRoot = pathname === '/';
   
       const isNeedAuth = pathsRequiringAuth.some((regex) => regex.test(pathname));
   
-      if (isNeedAuth) {
+      if (isRoot || isNeedAuth) {
         return isLoggedIn || false;
       }
   
