@@ -7,7 +7,7 @@ import PieChart from '@/app/component/dashboard/pie-chart';
 import RadarChart from '@/app/component/dashboard/radar-chart';
 
 export const metadata: Metadata = {
-  title: 'Dashboard Statistics',
+  title: "Statistics"
 };
 
 export default async function Page() {

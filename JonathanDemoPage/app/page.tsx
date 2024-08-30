@@ -5,6 +5,11 @@ import { lusitana } from '@/app/component/fonts';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/component/skeletons';
 import SideNav from '@/app/component/sidenav';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "CTS HomePage"
+};
 
 export default function Page() {
   return (

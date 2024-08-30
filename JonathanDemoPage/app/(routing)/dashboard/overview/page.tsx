@@ -1,5 +1,10 @@
 import LineChart from '@/app/component/dashboard/line-chart';
 import { lusitana } from '@/app/component/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Overview"
+};
 
 export default async function Page() {
     return (

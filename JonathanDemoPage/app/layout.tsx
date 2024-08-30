@@ -1,11 +1,11 @@
 import '@/app/styles/global.css';
 import { inter } from '@/app/component/fonts';
 import { Metadata } from 'next';
- 
+
 export const metadata: Metadata = {
   title: {
-    template: '%s | CTS Dashboard',
-    default: 'CTS Dashboard',
+    template: 'CTS | %s',
+    default: 'CTS',
   },
   description: 'The official Next.js Learn Dashboard built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
@@ -18,7 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        {children}</body>
     </html>
   );
 }

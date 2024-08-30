@@ -3,7 +3,12 @@ import RevenueChart from '@/app/component/dashboard/revenue-chart';
 import LatestInvoices from '@/app/component/dashboard/latest-invoices';
 import { lusitana } from '@/app/component/fonts';
 import { Suspense } from 'react';
+import { Metadata } from 'next';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/component/skeletons';
+
+export const metadata: Metadata = {
+  title: "HomePage"
+};
 
 export default function Page() {
   return (
