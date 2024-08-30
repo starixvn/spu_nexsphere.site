@@ -1,5 +1,4 @@
 import AcmeLogo from '@/app/component/acme-logo';
-import LoginForm from '@/app/component/login-form';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -15,7 +14,7 @@ export default function LoginPage() {
             <AcmeLogo />
           </div>
         </div>
-        <LoginForm />
+        <div>Login Page</div>
       </div>
     </main>
   );
