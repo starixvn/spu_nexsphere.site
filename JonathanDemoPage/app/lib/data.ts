@@ -6,19 +6,14 @@ import {
   InvoicesTable,
   LatestInvoiceRaw,
   Revenue,
-} from './definitions';
-import { formatCurrency } from './utils';
+  User
+} from '@/app/lib/definitions';
+import { formatCurrency } from '@/app/lib/utils';
 
 const ITEMS_PER_PAGE: number = parseInt(process.env.ITEMS_PER_PAGE || '5', 10) || 5;
 
 export async function fetchRevenue() {
   try {
-    // Artificially delay a response for demo purposes.
-    // Don't do this in production :)
-
-    // console.log('Fetching revenue data...');
-    // await new Promise((resolve) => setTimeout(resolve, 3000));
-
     const data = await sql<Revenue>`SELECT * FROM revenue`;
 
     return data.rows;
@@ -237,5 +232,21 @@ export async function fetchCustomersPages(query: string) {
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch total number of Customers.');
+  }
+}
+
+
+export async function getUser(email: string): Promise<User | undefined> {
+  try {
+      const user = await sql<User>`
+      SELECT u.name, u.email, u.password, r.role
+      FROM users AS u
+          INNER JOIN roles AS r ON r.userId = u.id
+      WHERE email=${email}
+      `;
+      return user.rows[0];
+  } catch (error) {
+      console.error('Failed to fetch user:', error);
+      throw new Error('Failed to fetch user.');
   }
 }

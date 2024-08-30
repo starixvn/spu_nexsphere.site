@@ -11,6 +11,9 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
+import { ComponentType } from 'react';
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
@@ -20,12 +23,14 @@ const links = [
     href: '/',
     icon: HomeIcon,
     subLinks: [],
+    allowedRoles: ['user', 'admin']
   },
   {
     name: 'Invoices',
     href: '/invoices',
     icon: ShoppingBagIcon,
     subLinks: [],
+    allowedRoles: ['user', 'admin']
   },
   {
     name: 'Dashboard',
@@ -37,6 +42,7 @@ const links = [
       { name: 'Overview', href: '/dashboard/overview' },
       { name: 'Statistics', href: '/dashboard/statistics' },
     ],
+    allowedRoles: ['admin']
   },
   {
     name: 'Report',
@@ -46,13 +52,14 @@ const links = [
       { name: 'Daily', href: '/report/daily' },
       { name: 'Monthly', href: '/report/monthly' },
     ],
+    allowedRoles: ['admin']
   }
 ];
   
-export default function NavLinks() {
+export default function NavLinks({ role }: { role: string }) {
   const pathname = usePathname();
   const [openLink, setOpenLink] = useState<string | null>(null);
-
+  console.log('role NavLinks', role);
   const toggleSubLinks = (name: string) => {
     setOpenLink(openLink === name ? null : name);
   };
@@ -72,6 +79,10 @@ export default function NavLinks() {
         const LinkIcon = link.icon;
         const isActive = pathname === link.href;
         const isOpen = openLink === link.name;
+        const hasAccess = link.allowedRoles.includes(role);
+        
+        if (!hasAccess) return null; // Không hiển thị link nếu không có quyền
+        
         return (
           <div key={link.name} className="w-full">
             <Link

@@ -31,6 +31,18 @@ export const authConfig = {
         return baseUrl;
       }
     },
+    async session({ session, token }) {
+      if (session?.user && typeof token.role === 'string') {
+        session.user.role = token.role;
+      }
+      return session;
+    },
+    async jwt({ token, user }) {
+      if (user) {
+        token.role = user.role;
+      }
+      return token;
+    },
   },
   providers: [], // Thêm các provider sau
 } satisfies NextAuthConfig;
