@@ -14,12 +14,11 @@ export const authConfig = {
       console.log('authorized', pathname);
   
       const isLoggedIn = !!auth?.user;
-      const isRoot = pathname === '/';
       const pathsRequiringAuth = [/^\/dashboard(\/.*)?$/, /^\/report(\/.*)?$/, /^\/invoices(\/.*)?$/];
   
       const isNeedAuth = pathsRequiringAuth.some((regex) => regex.test(pathname));
   
-      if (isRoot || isNeedAuth) {
+      if (isNeedAuth) {
         return isLoggedIn || false;
       }
   
