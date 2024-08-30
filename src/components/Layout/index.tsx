@@ -13,6 +13,8 @@ import MultilevelDropdownMenu from '@/components/MultilevelDropdownMenu';
 import { useDispatch, useSelector } from "react-redux";
 import getMenuData from "@/store/actions/demoMenuActions";
 
+import styles from '@/styles/webpage.module.scss'
+
 
 
 function PrimaryMenu(props: any) {
@@ -82,13 +84,13 @@ export default function Layout(props) {
             <main>
 
                 {/*<!-- PAGE -->*/}
-                <div className="page">
+                <div className={styles.page}>
 
                     <Header menu={<PrimaryMenu data={ssrNav ? ssrNav : primaryMenuData} />} />
 
 
-                    <section className={isHome ? `intro` : `intro intro-subpage`}>
-                        <div className="container">
+                    <section className={isHome ? styles.intro : `${styles.intro} ${styles['intro-subpage']}`}>
+                        <div className={styles.container}>
                             {pageTitle === null ? null : <>{isHome ? <h1>{pageTitle}</h1> : <h2>{pageTitle}</h2>}</>}
                             {contentComponent}
                         </div>

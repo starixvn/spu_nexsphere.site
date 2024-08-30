@@ -1,11 +1,53 @@
-$enable-negative-margins: true;
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 
-@import "~bootstrap/scss/bootstrap";
+body {
+    font-size: 16px;
 
-@import "layout/avatar";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/progress";
-@import "layout/sidebar";
+    // To prevent page jitter caused by the scroll bar in windows, add `overflow-y: scroll`
+    // overflow-y: scroll; 
+}
 
-@import "_custom";
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #f9f9f9;
+}
+a {
+    transition: .3s ease-in-out;
+}
+hr {
+    border: none;
+    border-bottom: 1px solid #dee;
+}
+
+code {
+    background-color: #f9f2f4;
+    border-radius: 3px;
+    color: #c7254e;
+    display: inline-block;
+    font-family: Inconsolata, Monaco, Consolas, Andale Mono, Bitstream Vera Sans Mono, Courier New, Courier, monospace;
+    margin: 0 0.2rem;
+    padding: 0 0.4rem;
+    white-space: nowrap;
+    word-wrap: break-word;
+    color: #e83e8c;
+    font-size: 87.5%;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    margin: 1.5rem 0 1.5rem 0;
+
+    a {
+        color: #888;
+    }
+}
+
