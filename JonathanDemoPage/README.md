@@ -13,5 +13,5 @@ pnpm dev
 The Home page is public, but other pages require login for access
 
 # Login
-username: user@nextmail.com
-password: 123456
+normal user: user@nextmail.com / 123456
+admin user: admin@nextmail.com / 123456

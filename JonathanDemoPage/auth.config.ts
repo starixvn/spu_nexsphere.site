@@ -1,5 +1,20 @@
 import type { NextAuthConfig } from 'next-auth';
- 
+
+// Định nghĩa các vai trò
+type Role = 'user' | 'mod' | 'admin';
+
+// Định nghĩa quyền truy cập cho từng vai trò
+const roleAccess: Record<Role, string[]> = {
+  user: ['/dashboard', '/report'],
+  mod: ['/dashboard', '/report', '/invoices'],
+  admin: ['/dashboard', '/report', '/invoices', '/admin'],
+};
+
+// Hàm kiểm tra quyền truy cập
+function hasAccess(role: Role, pathname: string): boolean {
+  return roleAccess[role].some(path => pathname.startsWith(path));
+}
+
 export const authConfig = {
   pages: {
     signIn: '/login', // Trang đăng nhập
@@ -12,16 +27,18 @@ export const authConfig = {
       if (pathname === '/favicon.ico') return true;
   
       const isLoggedIn = !!auth?.user;
-      const pathsRequiringAuth = [/^\/dashboard(\/.*)?$/, /^\/report(\/.*)?$/, /^\/invoices(\/.*)?$/];
+      const userRole = (auth?.user?.role as Role) || 'user';
       const isRoot = pathname === '/';
   
-      const isNeedAuth = pathsRequiringAuth.some((regex) => regex.test(pathname));
-  
-      if (isRoot || isNeedAuth) {
-        return isLoggedIn || false;
+      if (isRoot) {
+        return isLoggedIn;
       }
   
-      return true;
+      if (isLoggedIn) {
+        return hasAccess(userRole, pathname);
+      }
+  
+      return false;
     },
     async redirect({ url, baseUrl }) {
       // Chuyển hướng đến / sau khi đăng nhập
