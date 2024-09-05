@@ -6,7 +6,7 @@ import { auth, signOut } from '@/auth';
 
 export default async function SideNav() {
   const session = await auth();
-  console.log('session', session);
+  console.log('session permission', session?.user?.permissions);
 
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
@@ -20,7 +20,7 @@ export default async function SideNav() {
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         {/* <NavLinks role="admin"/> */}
-        <NavLinks role={session?.user?.role || ""}/>
+        <NavLinks user={session?.user}/>
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
         <form
           action={async () => {

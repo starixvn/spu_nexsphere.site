@@ -19,6 +19,12 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                     const user = await getUser(email);
                     if (!user) return null;
 
+                    //test
+                    user.permission = {
+                        dashboard: 'view',
+                        invoices: 'view,edit,full-access'
+                    };
+
                     const passwordsMatch = await bcrypt.compare(password, user.password);
                     if (passwordsMatch) return user;
                 }

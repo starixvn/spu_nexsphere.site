@@ -14,35 +14,30 @@ import clsx from 'clsx';
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 import { ComponentType } from 'react';
+import { AdapterUser } from 'next-auth/adapters';
+import { Permission } from '@/app/lib/definitions';
 
-// Map of links to display in the side navigation.
-// Depending on the size of the application, this would be stored in a database.
 const links = [
   {
     name: 'Home',
     href: '/',
     icon: HomeIcon,
-    subLinks: [],
-    allowedRoles: ['user', 'admin']
+    subLinks: []
   },
   {
     name: 'Invoices',
     href: '/invoices',
     icon: ShoppingBagIcon,
-    subLinks: [],
-    allowedRoles: ['user', 'admin']
+    subLinks: []
   },
   {
     name: 'Dashboard',
     href: '/dashboard',
     icon: ChartBarIcon,
     subLinks: [
-      // { name: 'Overview', href: '/dashboard/overview' },
-      // { name: 'Stats', href: '/dashboard/stats' },
       { name: 'Overview', href: '/dashboard/overview' },
       { name: 'Statistics', href: '/dashboard/statistics' },
-    ],
-    allowedRoles: ['admin']
+    ]
   },
   {
     name: 'Report',
@@ -51,17 +46,25 @@ const links = [
     subLinks: [
       { name: 'Daily', href: '/report/daily' },
       { name: 'Monthly', href: '/report/monthly' },
-    ],
-    allowedRoles: ['admin']
+    ]
   }
 ];
   
-export default function NavLinks({ role }: { role: string }) {
+export default function NavLinks({ user }: { user: AdapterUser }) {
   const pathname = usePathname();
   const [openLink, setOpenLink] = useState<string | null>(null);
-  console.log('role NavLinks', role);
-  const toggleSubLinks = (name: string) => {
-    setOpenLink(openLink === name ? null : name);
+  console.log('user permission', user?.permission);
+
+  // Hàm kiểm tra quyền truy cập
+  const checkAccess = (linkName: string) => {
+    console.log('linkName', linkName);
+    if (linkName === 'Home') return true;
+    if (user?.role === 'admin') return true;
+    const permission: Permission = user?.permission || {};
+    const requiredPermission = linkName.toLowerCase();
+    console.log('permission', permission);
+    console.log('requiredPermission', requiredPermission);
+    return permission[requiredPermission] && permission[requiredPermission].includes('view');
   };
 
   useEffect(() => {
@@ -79,7 +82,7 @@ export default function NavLinks({ role }: { role: string }) {
         const LinkIcon = link.icon;
         const isActive = pathname === link.href;
         const isOpen = openLink === link.name;
-        const hasAccess = link.allowedRoles.includes(role);
+        const hasAccess = checkAccess(link.name);
         
         if (!hasAccess) return null; // Không hiển thị link nếu không có quyền
         
@@ -96,7 +99,7 @@ export default function NavLinks({ role }: { role: string }) {
               onClick={(e) => {
                 if (link.subLinks.length > 0) {
                   e.preventDefault();
-                  toggleSubLinks(link.name);
+                  setOpenLink(openLink === link.name ? null : link.name);
                 }
               }}
             >

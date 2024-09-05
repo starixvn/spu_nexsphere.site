@@ -1,4 +1,5 @@
 import type { NextAuthConfig } from 'next-auth';
+import { Permission } from '@/app/lib/definitions';
 
 // Định nghĩa các vai trò
 type Role = 'user' | 'mod' | 'admin';
@@ -51,12 +52,16 @@ export const authConfig = {
     async session({ session, token }) {
       if (session?.user && typeof token.role === 'string') {
         session.user.role = token.role;
+        if (token.permission && typeof token.permission === 'object') {
+          session.user.permission = token.permission as Permission;
+        }
       }
       return session;
     },
     async jwt({ token, user }) {
       if (user) {
         token.role = user.role;
+        token.permission = user.permission as Permission;
       }
       return token;
     },

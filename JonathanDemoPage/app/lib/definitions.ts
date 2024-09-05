@@ -8,6 +8,11 @@ export type User = {
   email: string;
   password: string;
   role: string;
+  permission: Permission;
+};
+
+export type Permission = {
+  [key: string]: string;
 };
 
 export type Customer = {

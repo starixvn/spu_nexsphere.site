@@ -1,52 +1,55 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { auth } from '@/auth';
+import { Permission } from '@/app/lib/definitions';
 
-// Định nghĩa các vai trò và quyền truy cập
-type Role = 'user' | 'mod' | 'admin';
-
-const roleAccess: Record<Role, string[]> = {
-  user: ['/invoices'],
-  mod: ['/dashboard', '/report', '/invoices'],
-  admin: ['/dashboard', '/report', '/invoices', '/admin'],
+// Định nghĩa ánh xạ giữa đường dẫn và quyền
+const pathPermissionMap: { [key: string]: string } = {
+  '/invoices': 'invoices',
+  '/dashboard': 'dashboard',
+  '/report': 'report',
+  // Thêm các đường dẫn khác ở đây
 };
 
 async function middleware(request: NextRequest) {
   const session = await auth();
   const { pathname } = request.nextUrl;
+  console.log('middleware session', session);
 
   // Cho phép truy cập công khai vào trang đăng nhập, trang unauthorized và API routes
   if (pathname.startsWith('/api') || pathname === '/login' || pathname === '/unauthorized') {
     return NextResponse.next();
   }
 
-  console.log('session', session);
-
   // Kiểm tra xem người dùng đã đăng nhập chưa
   if (!session) {
     return NextResponse.redirect(new URL('/login', request.url));
   }
 
-  // Kiểm tra quyền truy cập dựa trên vai trò của người dùng
-  const userRole = session.user?.role as Role;
-  
   // Cho phép tất cả các vai trò truy cập trang chủ
   if (pathname === '/') {
     return NextResponse.next();
   }
-  
-  if (userRole && roleAccess[userRole]) {
-    const allowedPaths = roleAccess[userRole];
-    if (!allowedPaths.some(path => pathname.startsWith(path))) {
-      // Chuyển hướng đến trang không có quyền truy cập
-      return NextResponse.redirect(new URL('/unauthorized', request.url));
-    }
-  } else {
-    // Nếu không có vai trò hoặc vai trò không hợp lệ, chuyển hướng đến trang đăng nhập
-    return NextResponse.redirect(new URL('/login', request.url));
+  // Kiểm tra quyền truy cập dựa trên permission của người dùng
+  const userPermission = session.user?.permission as Permission;
+  const userRole = session.user?.role;
+
+  if (userRole === 'admin') {
+    return NextResponse.next(); // Admin có quyền truy cập tất cả
   }
 
-  return NextResponse.next();
+  if (userPermission) {
+    const requiredPermission = Object.keys(pathPermissionMap).find(path => pathname.startsWith(path));
+    if (requiredPermission) {
+      const permission = pathPermissionMap[requiredPermission];
+      if (userPermission[permission]?.includes('view')) {
+        return NextResponse.next();
+      }
+    }
+  }
+
+  // Chuyển hướng đến trang không có quyền truy cập
+  return NextResponse.redirect(new URL('/unauthorized', request.url));
 }
 
 // Kết hợp middleware của NextAuth với middleware tùy chỉnh
