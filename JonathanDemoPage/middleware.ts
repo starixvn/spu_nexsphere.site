@@ -2,19 +2,11 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { auth } from '@/auth';
 import { Permission } from '@/app/lib/definitions';
-
-// Định nghĩa ánh xạ giữa đường dẫn và quyền
-const pathPermissionMap: { [key: string]: string } = {
-  '/invoices': 'invoices',
-  '/dashboard': 'dashboard',
-  '/report': 'report',
-  // Thêm các đường dẫn khác ở đây
-};
+import { PermissionType } from '@/app/lib/constants';
 
 async function middleware(request: NextRequest) {
   const session = await auth();
   const { pathname } = request.nextUrl;
-  console.log('middleware session', session);
 
   // Cho phép truy cập công khai vào trang đăng nhập, trang unauthorized và API routes
   if (pathname.startsWith('/api') || pathname === '/login' || pathname === '/unauthorized') {
@@ -37,25 +29,36 @@ async function middleware(request: NextRequest) {
   if (userRole === 'admin') {
     return NextResponse.next(); // Admin có quyền truy cập tất cả
   }
-
+  
   if (userPermission) {
-    const requiredPermission = Object.keys(pathPermissionMap).find(path => pathname.startsWith(path));
+    const pathSegments = pathname.split('/').filter(Boolean);
+
+    let requiredPermission = pathSegments[0];
     if (requiredPermission) {
-      const permission = pathPermissionMap[requiredPermission];
-      if (userPermission[permission]?.includes('view')) {
-        return NextResponse.next();
+      const userPermissionForPath = userPermission[requiredPermission];
+      const isCreateRoute = pathSegments[1] === 'create';
+      const isEditRoute = pathSegments.length > 1 && pathSegments[1] !== 'create';
+      const isMainPage = pathSegments.length === 1;
+
+      if (userPermissionForPath) {
+        if (userPermissionForPath.includes(PermissionType.FULL_ACCESS)) {
+          return NextResponse.next();
+        }
+        if ((isCreateRoute || isEditRoute) && userPermissionForPath.includes(PermissionType.CREATE)) {
+          return NextResponse.next();
+        }
+        if ((isMainPage && userPermissionForPath.includes(PermissionType.VIEW))) {
+          return NextResponse.next();
+        }
       }
     }
   }
 
-  // Chuyển hướng đến trang không có quyền truy cập
   return NextResponse.redirect(new URL('/unauthorized', request.url));
 }
 
-// Kết hợp middleware của NextAuth với middleware tùy chỉnh
 export default middleware;
 
-// Cập nhật config để áp dụng middleware cho các đường dẫn cần kiểm tra
 export const config = {
   matcher: ['/((?!api|_next/static|_next/image|.*\\.png$).*)'],
 };

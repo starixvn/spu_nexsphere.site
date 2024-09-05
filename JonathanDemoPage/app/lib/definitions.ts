@@ -8,7 +8,7 @@ export type User = {
   email: string;
   password: string;
   role: string;
-  permission: Permission;
+  permission: Permission | {};
 };
 
 export type Permission = {

@@ -91,3 +91,8 @@ export const exportToCSV = (tableData: any[], fileName: string) => {
   link.click();
   document.body.removeChild(link);
 };
+
+export function getResourceFromPath(path: string): string {
+  const segments = path.split('/');
+  return segments[1] || ''; // Lấy phần tử thứ hai của đường dẫn
+}

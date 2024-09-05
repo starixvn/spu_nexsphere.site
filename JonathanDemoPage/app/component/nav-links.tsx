@@ -57,13 +57,11 @@ export default function NavLinks({ user }: { user: AdapterUser }) {
 
   // Hàm kiểm tra quyền truy cập
   const checkAccess = (linkName: string) => {
-    console.log('linkName', linkName);
     if (linkName === 'Home') return true;
     if (user?.role === 'admin') return true;
+
     const permission: Permission = user?.permission || {};
     const requiredPermission = linkName.toLowerCase();
-    console.log('permission', permission);
-    console.log('requiredPermission', requiredPermission);
     return permission[requiredPermission] && permission[requiredPermission].includes('view');
   };
 

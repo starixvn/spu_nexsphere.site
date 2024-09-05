@@ -3,10 +3,11 @@ import NavLinks from '@/app/component/nav-links';
 import AcmeLogo from '@/app/component/acme-logo';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import { auth, signOut } from '@/auth';
+import { AdapterUser } from 'next-auth/adapters';
 
 export default async function SideNav() {
   const session = await auth();
-  console.log('session permission', session?.user?.permissions);
+  console.log('session permission', session?.user?.permission);
 
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
@@ -20,7 +21,7 @@ export default async function SideNav() {
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         {/* <NavLinks role="admin"/> */}
-        <NavLinks user={session?.user}/>
+        <NavLinks user={session?.user as AdapterUser}/>
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
         <form
           action={async () => {
