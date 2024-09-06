@@ -21,8 +21,9 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
                     //test
                     user.permission = {
-                        dashboard: 'view,create',
-                        invoices: 'view'
+                        'dashboard/overview': 'view',
+                        'dashboard/statistics': 'view',
+                        'invoices': 'view,create'
                     };
 
                     const passwordsMatch = await bcrypt.compare(password, user.password);

@@ -53,21 +53,30 @@ const links = [
 export default function NavLinks({ user }: { user: AdapterUser }) {
   const pathname = usePathname();
   const [openLink, setOpenLink] = useState<string | null>(null);
-  console.log('user permission', user?.permission);
 
-  // Hàm kiểm tra quyền truy cập
-  const checkAccess = (linkName: string) => {
-    if (linkName === 'Home') return true;
+  const checkAccess = (linkPath: string) => {
+    if (linkPath === '/') return true;
     if (user?.role === 'admin') return true;
 
     const permission: Permission = user?.permission || {};
-    const requiredPermission = linkName.toLowerCase();
-    return permission[requiredPermission] && permission[requiredPermission].includes('view');
+    const pathSegments = linkPath.split('/').filter(Boolean);
+    let currentPath = '';
+    
+    for (let i = 0; i < pathSegments.length; i++) {
+      currentPath += (i > 0 ? '/' : '') + pathSegments[i];
+      const permissionForPath = permission[currentPath];
+      
+      if (permissionForPath) {
+        return true;
+      }
+    }
+    
+    return false;
   };
 
   useEffect(() => {
     const activeLink = links.find(link =>
-      link.subLinks.some(subLink => pathname === subLink.href)
+      link.href === pathname || link.subLinks.some(subLink => pathname === subLink.href)
     );
     if (activeLink) {
       setOpenLink(activeLink.name);
@@ -78,9 +87,9 @@ export default function NavLinks({ user }: { user: AdapterUser }) {
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
-        const isActive = pathname === link.href;
+        const isActive = pathname === link.href || link.subLinks.some(subLink => pathname === subLink.href);
         const isOpen = openLink === link.name;
-        const hasAccess = checkAccess(link.name);
+        const hasAccess = checkAccess(link.href) || link.subLinks.some(subLink => checkAccess(subLink.href));
         
         if (!hasAccess) return null; // Không hiển thị link nếu không có quyền
         
@@ -115,11 +124,14 @@ export default function NavLinks({ user }: { user: AdapterUser }) {
                 </span>
               )}
             </Link>
-            {/* Hiển thị sub-links nếu có */}
+            {/* Hiển thị sub-links nếu có và người dùng có quyền xem ít nhất một sub-link */}
             {isOpen && link.subLinks.length > 0 && (
               <div className="ml-0 pl-8">
                 {link.subLinks.map((subLink) => {
-                  const isSubLinkActive = pathname === subLink.href; // Kiểm tra isActive riêng cho sublink
+                  const isSubLinkActive = pathname === subLink.href;
+                  const hasSubLinkAccess = checkAccess(subLink.href);
+                  if (!hasSubLinkAccess) return null;
+
                   return (
                     <Link
                       key={subLink.name}
@@ -127,7 +139,7 @@ export default function NavLinks({ user }: { user: AdapterUser }) {
                       className={clsx(
                         'block p-2 text-sm font-medium hover:bg-sky-100 hover:text-blue-600',
                         {
-                          'bg-sky-100 text-blue-600': isSubLinkActive, // Áp dụng isActive cho sublink
+                          'bg-sky-100 text-blue-600': isSubLinkActive,
                         }
                       )}
                       style={{ width: '100%' }}

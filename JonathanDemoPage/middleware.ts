@@ -32,25 +32,36 @@ async function middleware(request: NextRequest) {
   
   if (userPermission) {
     const pathSegments = pathname.split('/').filter(Boolean);
+    let currentPath = '';
+    let hasPermission = false;
 
-    let requiredPermission = pathSegments[0];
-    if (requiredPermission) {
-      const userPermissionForPath = userPermission[requiredPermission];
-      const isCreateRoute = pathSegments[1] === 'create';
-      const isEditRoute = pathSegments.length > 1 && pathSegments[1] !== 'create';
-      const isMainPage = pathSegments.length === 1;
+    for (let i = 0; i < pathSegments.length; i++) {
+      currentPath += (i > 0 ? '/' : '') + pathSegments[i];
+      const userPermissionForPath = userPermission[currentPath];
 
       if (userPermissionForPath) {
-        if (userPermissionForPath.includes(PermissionType.FULL_ACCESS)) {
-          return NextResponse.next();
+        const permissionTypes = userPermissionForPath.split(',');
+        const isCreateRoute = pathSegments.includes('create');
+        const isEditRoute = i === pathSegments.length - 1 && pathSegments[i] !== 'create';
+        const isViewRoute = i === pathSegments.length - 1;
+
+        if (permissionTypes.includes(PermissionType.FULL_ACCESS)) {
+          hasPermission = true;
+          break;
         }
-        if ((isCreateRoute || isEditRoute) && userPermissionForPath.includes(PermissionType.CREATE)) {
-          return NextResponse.next();
+        if ((isCreateRoute || isEditRoute) && permissionTypes.includes(PermissionType.CREATE)) {
+          hasPermission = true;
+          break;
         }
-        if ((isMainPage && userPermissionForPath.includes(PermissionType.VIEW))) {
-          return NextResponse.next();
+        if (isViewRoute && permissionTypes.includes(PermissionType.VIEW)) {
+          hasPermission = true;
+          break;
         }
       }
+    }
+
+    if (hasPermission) {
+      return NextResponse.next();
     }
   }
 
