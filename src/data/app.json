@@ -9,16 +9,6 @@
       "link": "\/"
     },
     {
-      "title": "About",
-      "icon": false,
-      "link": "\/about.html"
-    },
-    {
-        "title": "Posts",
-        "icon": false,
-        "link": "/posts.html"
-    },
-    {
       "title": "Sign In",
       "icon": false,
       "link": "\/sign-in.html"

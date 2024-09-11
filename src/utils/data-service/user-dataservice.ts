@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axiosInstance from "@/utils/libs/axiosInstance";
 
 class UserDataService {
 	constructor() {
@@ -6,7 +6,7 @@ class UserDataService {
 	}
 
     getUsers(){
-        return axios.get("https://jsonplaceholder.typicode.com/users").then(function (response) {
+        return axiosInstance.get("/users").then(function (response) {
             return response.data ? response.data : null;
         });
     }
