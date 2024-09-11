@@ -235,7 +235,6 @@ export async function fetchCustomersPages(query: string) {
   }
 }
 
-
 export async function getUser(email: string): Promise<User | undefined> {
   try {
       const user = await sql<User>`
@@ -248,5 +247,12 @@ export async function getUser(email: string): Promise<User | undefined> {
   } catch (error) {
       console.error('Failed to fetch user:', error);
       throw new Error('Failed to fetch user.');
+  }
+}
+
+export function isExpiredLogin(email: string): boolean | undefined {
+  try {
+      return true;
+  } catch (error) {
   }
 }
