@@ -11,7 +11,6 @@ export default function LogoutForm() {
   const handleSignOut = async () => {
     try {
       await signOut();
-      // Nếu signOut() không ném lỗi, chúng ta coi như đăng xuất thành công
       toast.success('Đăng xuất thành công');
       router.push('/login');
     } catch (error) {

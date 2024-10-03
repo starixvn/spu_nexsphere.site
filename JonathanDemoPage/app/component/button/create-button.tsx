@@ -1,11 +1,14 @@
+'use client';
+
 import { PlusIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Permission } from '@/app/lib/definitions';
+import { useSelector } from 'react-redux';
+import { selectUser } from '@/app/redux/features/user/sessionSlice';
 
 interface CreateButtonProps {
   href: string;
   label: string;
-  permission: Permission;
   requiredPermission?: string;
   routePath: string;
 }
@@ -14,11 +17,14 @@ const requiredPermission = 'create';
 
 function hasPermission(permission: Permission, routePath: string): boolean {
   const routePathPermissions = permission[routePath] || '';
-  console.log('routePathPermissions', routePathPermissions);
   return routePathPermissions.includes(requiredPermission) || routePathPermissions.includes('full-access');
 }
 
-export function CreateButton({ href, label, permission, routePath }: CreateButtonProps) {
+export function CreateButton({ href, label, routePath }: CreateButtonProps) {
+  
+  const sessionState = useSelector(selectUser);
+  const permission = sessionState?.session?.permission;
+
   if (!permission) {
     return null;
   }

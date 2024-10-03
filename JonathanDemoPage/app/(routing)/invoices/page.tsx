@@ -6,8 +6,6 @@ import { lusitana } from '@/app/component/fonts';
 import { InvoicesTableSkeleton } from '@/app/component/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
-import { auth } from '@/auth';
-import { Permission } from '@/app/lib/definitions';
 
 export default async function Page({
     searchParams,
@@ -23,9 +21,6 @@ export default async function Page({
 
     const totalPages = await fetchInvoicesPages(query);
 
-    const session = await auth();
-    const permission = session?.user?.permission as Permission;
-
     return (
         <div className="w-full">
             <div className="flex w-full items-center justify-between">
@@ -33,7 +28,7 @@ export default async function Page({
             </div>
             <div className="mt-4 flex items-center justify-between gap-2 md:mt-8">
                 <Search placeholder="Search invoices..." />
-                <CreateButton href={`/${pageName}/create`} label={`Create ${pageName}`} permission={permission} routePath={pageName} />
+                <CreateButton href={`/${pageName}/create`} label={`Create ${pageName}`} routePath={pageName} />
             </div>
             <Suspense key={query + currentPage} fallback={<InvoicesTableSkeleton />}>
                 <Table query={query} currentPage={currentPage} />

@@ -16,6 +16,15 @@ import { redirect } from 'next/navigation';
 import { ComponentType } from 'react';
 import { AdapterUser } from 'next-auth/adapters';
 import { Permission } from '@/app/lib/definitions';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectUser, userSignedIn } from '@/app/redux/features/user/sessionSlice';
+import { Session } from "next-auth";
+
+interface NavLinksProps {
+  user: AdapterUser | null;
+  session: Session | null;
+}
+
 
 const links = [
   {
@@ -50,9 +59,14 @@ const links = [
   }
 ];
   
-export default function NavLinks({ user }: { user: AdapterUser }) {
+export default function NavLinks({ user, session }: NavLinksProps) {
   const pathname = usePathname();
   const [openLink, setOpenLink] = useState<string | null>(null);
+  const dispatch = useDispatch();
+
+  if(session != null){
+    dispatch(userSignedIn(session));
+  }
 
   const checkAccess = (linkPath: string) => {
     if (linkPath === '/') return true;
