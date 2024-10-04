@@ -9,7 +9,6 @@ import { selectUser } from '@/app/redux/features/user/sessionSlice';
 interface CreateButtonProps {
   href: string;
   label: string;
-  requiredPermission?: string;
   routePath: string;
 }
 
@@ -23,6 +22,7 @@ function hasPermission(permission: Permission, routePath: string): boolean {
 export function CreateButton({ href, label, routePath }: CreateButtonProps) {
   
   const sessionState = useSelector(selectUser);
+  console.log('sessionState', sessionState);
   const permission = sessionState?.session?.permission;
 
   if (!permission) {

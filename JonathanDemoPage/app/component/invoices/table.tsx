@@ -1,16 +1,23 @@
 import Image from 'next/image';
-import { UpdateInvoice, DeleteInvoice } from '@/app/component/invoices/buttons';
+import { UpdateButton } from '@/app/component/button/update-button';
+import { DeleteInvoice } from '@/app/component/invoices/buttons';
 import InvoiceStatus from '@/app/component/invoices/status';
 import { formatDateToLocal, formatCurrency } from '@/app/lib/utils';
 import { fetchFilteredInvoices } from '@/app/lib/data';
+import { store } from '@/app/redux/store';
+
+interface InvoicesTableProps {
+  query: string;
+  currentPage: number;
+  routePath: string;
+}
 
 export default async function InvoicesTable({
   query,
   currentPage,
-}: {
-  query: string;
-  currentPage: number;
-}) {
+  routePath
+}: InvoicesTableProps) {
+
   const invoices = await fetchFilteredInvoices(query, currentPage);
 
   return (
@@ -47,8 +54,8 @@ export default async function InvoicesTable({
                     <p>{formatDateToLocal(invoice.date)}</p>
                   </div>
                   <div className="flex justify-end gap-2">
-                    <UpdateInvoice id={invoice.id} />
-                    <DeleteInvoice id={invoice.id} />
+                    <UpdateButton href={`/${routePath}/${invoice.id}/edit`}/>
+                    {/* <DeleteInvoice id={invoice.id} /> */}
                   </div>
                 </div>
               </div>
@@ -109,8 +116,8 @@ export default async function InvoicesTable({
                   </td>
                   <td className="whitespace-nowrap py-3 pl-6 pr-3">
                     <div className="flex justify-end gap-3">
-                      <UpdateInvoice id={invoice.id} />
-                      <DeleteInvoice id={invoice.id} />
+                      <UpdateButton href={`/${routePath}/${invoice.id}/edit`}/>
+                      {/* <DeleteInvoice id={invoice.id} /> */}
                     </div>
                   </td>
                 </tr>

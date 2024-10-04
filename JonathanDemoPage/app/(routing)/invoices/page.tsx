@@ -6,6 +6,8 @@ import { lusitana } from '@/app/component/fonts';
 import { InvoicesTableSkeleton } from '@/app/component/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { store } from '@/app/redux/store';
+import { selectUser } from '@/app/redux/features/user/sessionSlice';
 
 export default async function Page({
     searchParams,
@@ -15,11 +17,15 @@ export default async function Page({
         page?: string;
     };
 }) {
+    const state = store.getState();
+    const user = selectUser(state);
+    const permission = user?.session?.permission; // Lấy permission từ Redux
+
     const pageName = 'invoices';
     const query = searchParams?.query || '';
     const currentPage = Number(searchParams?.page) || 1;
 
-    const totalPages = await fetchInvoicesPages(query);
+    const totalPages = await fetchInvoicesPages(query); // Lấy số trang từ API
 
     return (
         <div className="w-full">
@@ -31,7 +37,7 @@ export default async function Page({
                 <CreateButton href={`/${pageName}/create`} label={`Create ${pageName}`} routePath={pageName} />
             </div>
             <Suspense key={query + currentPage} fallback={<InvoicesTableSkeleton />}>
-                <Table query={query} currentPage={currentPage} />
+                <Table query={query} currentPage={currentPage} routePath={pageName} permission={permission} />
             </Suspense>
             <div className="mt-5 flex w-full justify-center">
                 <Pagination totalPages={totalPages} />

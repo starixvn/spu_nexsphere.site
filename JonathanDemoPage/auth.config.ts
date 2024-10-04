@@ -2,30 +2,25 @@ import type { NextAuthConfig } from 'next-auth';
 import { Permission } from '@/app/lib/definitions';
 import { PermissionType } from '@/app/lib/constants';
 
-// Định nghĩa các vai trò
 type Role = 'user' | 'mod' | 'admin';
 
-// Hàm kiểm tra quyền truy cập
 export const authConfig = {
   pages: {
-    signIn: '/login', // Trang đăng nhập
+    signIn: '/login'
   },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const { pathname } = nextUrl;
       const session = auth;
 
-      // Cho phép truy cập công khai vào trang đăng nhập, trang unauthorized và API routes
       if (pathname.startsWith('/api') || pathname === '/login' || pathname === '/unauthorized') {
         return true;
       }
 
-      // Kiểm tra xem người dùng đã đăng nhập chưa
       if (!session) {
         return false;
       }
 
-      // Cho phép tất cả các vai trò truy cập trang chủ
       if (pathname === '/') {
         return true;
       }
@@ -34,7 +29,7 @@ export const authConfig = {
       const userRole = session.user?.role as Role;
 
       if (userRole === 'admin') {
-        return true; // Admin có quyền truy cập tất cả
+        return true;
       }
       
       if (userPermission) {
@@ -73,7 +68,6 @@ export const authConfig = {
       return false;
     },
     async redirect({ url, baseUrl }) {
-      // Chuyển hướng đến / sau khi đăng nhập
       if (url.startsWith(baseUrl)) {
         return `${baseUrl}/`;
       } else {
@@ -97,10 +91,10 @@ export const authConfig = {
       return token;
     },
   },
-  providers: [], // Thêm các provider sau
+  providers: [],
   
   session: {
     strategy: "jwt",
-    maxAge: 30 * 24 * 60 * 60, // 30 ngày
+    maxAge: 30 * 24 * 60 * 60, // 30 days
   },
 } satisfies NextAuthConfig;

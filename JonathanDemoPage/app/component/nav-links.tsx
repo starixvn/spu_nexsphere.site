@@ -11,9 +11,6 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import { useSession } from 'next-auth/react';
-import { redirect } from 'next/navigation';
-import { ComponentType } from 'react';
 import { AdapterUser } from 'next-auth/adapters';
 import { Permission } from '@/app/lib/definitions';
 import { useSelector, useDispatch } from 'react-redux';
@@ -62,11 +59,11 @@ const links = [
 export default function NavLinks({ user, session }: NavLinksProps) {
   const pathname = usePathname();
   const [openLink, setOpenLink] = useState<string | null>(null);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  if(session != null){
-    dispatch(userSignedIn(session));
-  }
+  // if(session != null){
+  //   dispatch(userSignedIn(session));
+  // }
 
   const checkAccess = (linkPath: string) => {
     if (linkPath === '/') return true;
