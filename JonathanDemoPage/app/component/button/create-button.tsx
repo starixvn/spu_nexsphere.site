@@ -2,9 +2,6 @@
 
 import { PlusIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { Permission } from '@/app/lib/definitions';
-import { useSelector } from 'react-redux';
-import { selectUser } from '@/app/redux/features/user/sessionSlice';
 
 interface CreateButtonProps {
   href: string;
@@ -12,25 +9,8 @@ interface CreateButtonProps {
   routePath: string;
 }
 
-const requiredPermission = 'create';
-
-function hasPermission(permission: Permission, routePath: string): boolean {
-  const routePathPermissions = permission[routePath] || '';
-  return routePathPermissions.includes(requiredPermission) || routePathPermissions.includes('full-access');
-}
-
 export function CreateButton({ href, label, routePath }: CreateButtonProps) {
   
-  const sessionState = useSelector(selectUser);
-  console.log('sessionState', sessionState);
-  const permission = sessionState?.session?.permission;
-
-  if (!permission) {
-    return null;
-  }
-
-  if (!hasPermission(permission, routePath)) return null;
-
   return (
     <Link
       href={href}

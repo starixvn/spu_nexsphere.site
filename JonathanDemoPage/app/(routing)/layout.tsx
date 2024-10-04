@@ -1,13 +1,5 @@
 import '@/app/styles/global.css';
-import { Metadata } from 'next';
 import SideNav from '@/app/component/sidenav';
-
-export const metadata: Metadata = {
-  title: {
-    template: 'Home | %s',
-    default: 'Home',
-  }
-};
 
 export default function DashboardLayout({
   children,
