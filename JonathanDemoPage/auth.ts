@@ -3,9 +3,7 @@ import { authConfig } from '@/auth.config';
 import Credentials from 'next-auth/providers/credentials';
 import { z } from 'zod';
 import bcrypt from 'bcryptjs';
-import { getUser } from '@/app/lib/data';
-import { store } from '@/app/redux/store';
-import { userSignedIn } from '@/app/redux/features/user/sessionSlice';
+import { getUser } from '@/app/lib/dataFromApi';
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
     ...authConfig,
@@ -21,12 +19,6 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                     const user = await getUser(email);
                     if (!user) return null;
 
-                    //test
-                    user.permission = {
-                        'dashboard/overview': 'view',
-                        'dashboard/statistics': 'view',
-                        'invoices': 'view,create,full-access'
-                    };
 
                     const passwordsMatch = await bcrypt.compare(password, user.password);
                     if (passwordsMatch) {
