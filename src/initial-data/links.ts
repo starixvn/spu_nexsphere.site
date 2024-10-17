@@ -30,6 +30,11 @@ const links: Link[] = [
         //     { name: 'Daily', href: '/report/daily' },
         //     { name: 'Monthly', href: '/report/monthly' },
         //   ]
+    },
+    {
+        name: 'Product',
+        href: '/products',
+        icon: NewspaperIcon,
     }
 ];
 
