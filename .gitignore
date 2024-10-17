@@ -1,2 +1,4 @@
 /JonathanDemoApi/ExternalCTSApi/
 /JonathanDemoApi/
+/.next/*
+/node_modules/*

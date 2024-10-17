@@ -7,9 +7,9 @@ import axiosInstance from "@/app/lib/axiosInstance";
 
     async getProducts(page: number) {
         try {
-          return axiosInstance.get('/products/' + page).then((response) => {
+          return axiosInstance.get('/api/products/' + page).then((response) => {
             const products = response.data;
-            return products;  
+            return {results: products, count: 70};  
           });
           
         } catch (err) {
