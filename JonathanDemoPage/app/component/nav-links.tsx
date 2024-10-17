@@ -37,6 +37,12 @@ const links = [
     subLinks: []
   },
   {
+    name: 'Products',
+    href: '/products',
+    icon: ShoppingBagIcon,
+    subLinks: []
+  },
+  {
     name: 'Dashboard',
     href: '/dashboard',
     icon: ChartBarIcon,

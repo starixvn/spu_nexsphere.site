@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+
 export async function fetchCustomers() {
   try {
     const response = await axios.get('http://localhost:8000/customers');
@@ -11,3 +12,5 @@ export async function fetchCustomers() {
     throw new Error('Failed to fetch all customers.');
   }
 }
+
+

@@ -1,0 +1,1420 @@
+[
+    {
+      "id": 1,
+      "title": "Wireless Noise-Cancelling Headphones",
+      "description": "Premium headphones with active noise-cancellation.",
+      "category": "wireless tech",
+      "price": 249.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71-Nso9qP6L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71o2pyT3JYL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71LiET6omkL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71OU1ugguBL._AC_UF894,1000_QL80_FMwebp_.jpg"
+      ],
+      "rating": {
+        "rate": 4.5,
+        "count": 653
+      },
+      "brand": "Sony",
+      "color": "Black",
+      "connectivity": "Bluetooth",
+      "wireless": true
+    },
+    {
+      "id": 2,
+      "title": "Smartphone Camera Gimbal",
+      "description": "Stabilize your smartphone videos with this advanced gimbal.",
+      "category": "electronics",
+      "price": 159.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/619YA770W3L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61hQRqawF9L._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71S-eUw2c1L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71QHKbV4LqL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate":4.2,
+        "count": 194
+      },
+      "brand": "DJI",
+      "compatibility": "iOS, Android",
+      "weight": "250g"
+    },
+    {
+      "id": 3,
+      "title": "Professional DSLR Camera",
+      "description": "Capture stunning photos with this high-end DSLR camera.",
+      "category": "electronics",
+      "price": 1899.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71Is-Zv6A0L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71VOeYCrFZL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71HrUsWpOCL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61L-bt6hnGL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.8,
+        "count": 873
+      },
+      "brand": "Canon",
+      "resolution": "24.2MP",
+      "sensor": "Full-frame"
+    },
+    {
+      "id": 4,
+      "title": "Ultrabook Laptop",
+      "description": "Slim and lightweight laptop for productivity on the go.",
+      "category": "electronics",
+      "price": 999.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71ORR5qHBQL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/6185VIPsyQL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61dyKUjW-+L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/51XJy0pg4XL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61VLNvCzzWL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "count": 1150,
+        "rate": 4.1
+      },
+      "brand": "Lenovo",
+      "screen_size": "14 inches",
+      "storage": "512GB SSD",
+      "ram": "16GB"
+    },
+    {
+      "id": 5,
+      "title": "Fitness Tracker Watch",
+      "description": "Monitor your health and activity with this smartwatch.",
+      "category": "electronics",
+      "price": 89.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/618nYLb6BDL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61GPJJweUOL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71jnwVOZXLL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71AuBpzZVnL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4,
+        "count": 6283
+      },
+      "brand": "Fitbit",
+      "display": "Color touchscreen",
+      "heart_rate_monitor": true,
+      "waterproof": true
+    },
+    {
+      "id": 6,
+      "title": "Gaming Console",
+      "description": "Immerse yourself in gaming with the latest console.",
+      "category": "wireless tech",
+      "price": 399.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/61VeVFjD0hL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61Q8-lbnjeL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71g-Dekkg8L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/612Rlk1eWwL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 3.8,
+        "count": 658
+      },
+      "brand": "Sony",
+      "storage": "1TB",
+      "resolution": "4K",
+      "games_included": 2
+    },
+    {
+      "id": 7,
+      "title": "Wireless Charging Pad",
+      "description": "Charge your devices wirelessly with this sleek charging pad.",
+      "category": "wireless tech",
+      "price": 39.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/51bIT8SGRaS._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71sFrwPmD4S._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71-aqb+qnbL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81VKRIt5GyL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 3.1,
+        "count": 5698
+      },
+      "brand": "Anker",
+      "compatibility": "Qi-enabled devices",
+      "output_power": "10W",
+      "color": "White"
+    },
+    {
+      "id": 8,
+      "title": "Robot Vacuum Cleaner",
+      "description": "Keep your floors clean with this smart robot vacuum.",
+      "category": "electronics",
+      "price": 299.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/611nS4G21fL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/816NMO972JL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71lkq8wRxDL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/812TfySfIKL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 246
+      },
+      "brand": "iRobot",
+      "suction_power": "2000Pa",
+      "battery_life": "90 minutes",
+      "mapping_technology": true
+    },
+    {
+      "id": 9,
+      "title": "Bluetooth Speaker",
+      "description": "Portable speaker with powerful sound and long battery life.",
+      "category": "wireless tech",
+      "price": 79.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/81djh1gfUwL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61jIE9+BgDL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71jNiJ5DuVL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71SBEFBZ+QL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 3.8,
+        "count": 8413
+      },
+      "brand": "JBL",
+      "output_power": "20W",
+      "battery_life": "12 hours",
+      "waterproof": true
+    },
+    {
+      "id": 10,
+      "title": "Portable External SSD",
+      "description": "Fast and compact external SSD for data storage and transfer.",
+      "category": "electronics",
+      "price": 149.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/81P6loFp02L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71A0FX61BOL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/91h1PbXKcOL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.1,
+        "count": 469
+      },
+      "brand": "Samsung",
+      "storage_capacity": "500GB",
+      "interface": "USB 3.2 Gen 2",
+      "color": "Blue"
+    },
+    {
+      "id": 11,
+      "title": "Electric Scooter",
+      "description": "Eco-friendly electric scooter for urban commuting.",
+      "category": "electronics",
+      "price": 349.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71M0uFwBskL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81mC+7wxW7L._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/411NZWH0ulL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.6,
+        "count": 5546
+      },
+      "brand": "Xiaomi",
+      "max_speed": "25 km/h",
+      "range": "20 km",
+      "weight_capacity": "100 kg"
+    },
+    {
+      "id": 12,
+      "title": "Kitchen Blender",
+      "description": "Powerful blender for smoothies, soups, and more.",
+      "category": "Home",
+      "price": 89.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/81n-9sDsr6L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/911YntqEcUL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81m11ZtKz7L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/91O4MdoIGKL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.4,
+        "count": 6942
+      },
+      "brand": "Vitamix",
+      "power": "1200W",
+      "speeds": "Variable speed control",
+      "color": "Green"
+    },
+    {
+      "id": 13,
+      "title": "Wireless Gaming Mouse",
+      "description": "Precision gaming mouse with customizable RGB lighting.",
+      "category": "wireless tech",
+      "price": 59.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/61BJ2MpgTTL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71IyBLdKvBL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61Zrxdg-f9L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61H0PMVTVgL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 8941
+      },
+      "brand": "Logitech",
+      "dpi_range": "100 - 16000",
+      "wireless": true,
+      "buttons": 6
+    },
+    {
+      "id": 14,
+      "title": "Fitness Treadmill",
+      "description": "High-performance treadmill for home workouts.",
+      "category": "Home",
+      "price": 899.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71c4EohJs4L._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61k-G0MiZYL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71-Fvn5XAAL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81Y8hTYEQoL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.4,
+        "count": 1534
+      },
+      "brand": "ProForm",
+      "max_speed": "18 km/h",
+      "incline_levels": 15,
+      "display": "Touchscreen",
+      "foldable": true
+    },
+    {
+      "id": 15,
+      "title": "Smart Thermostat",
+      "description": "Programmable thermostat for energy-efficient temperature control.",
+      "category": "Home",
+      "price": 129.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/41lvboI+r2L._AC_SY1000_.jpg",
+        "https://m.media-amazon.com/images/I/217XXyvJJbL._AC_SY350_.jpg",
+        "https://m.media-amazon.com/images/I/41AZpY4NAQL._AC_SY1000_.jpg",
+        "https://m.media-amazon.com/images/I/41aWDHwL-RL._AC_SY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 4.3,
+        "count": 561
+      },
+      "brand": "Nest",
+      "compatibility": "iOS, Android",
+      "connectivity": "Wi-Fi",
+      "voice_control": true
+    },
+    {
+      "id": 16,
+      "title": "Portable Solar Charger",
+      "description": "Charge your devices using solar power on the go.",
+      "category": "electronics",
+      "price": 49.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/813W2pdRoXL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/41bfhXM6lAL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71Xg4YNhw4L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71xnJCT2FnL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.2,
+        "count": 1554
+      },
+      "brand": "Goal Zero",
+      "capacity": "10000mAh",
+      "solar_panel_power": "7W",
+      "waterproof": true
+    },
+    {
+      "id": 17,
+      "title": "Yoga Mat",
+      "description": "High-quality yoga mat for comfortable workouts.",
+      "category": "Home",
+      "price": 29.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71I2r88GXhL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71xiBmGk09L._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71a+cZsoZTL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71UA06avs9L._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 2.1,
+        "count": 112
+      },
+      "brand": "Liforme",
+      "material": "Eco-friendly TPE",
+      "thickness": "5mm",
+      "color": "Purple"
+    },
+    {
+      "id": 18,
+      "title": "Portable Bluetooth Projector",
+      "description": "Project your favorite content anywhere with this compact projector.",
+      "category": "wireless tech",
+      "price": 179.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/81JBs6XdBzL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81PgPOlBYqL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81JZvxfNYUL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81bgco-rmNL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.3,
+        "count": 4986
+      },
+      "brand": "Anker",
+      "resolution": "720p",
+      "connectivity": "Bluetooth, Wi-Fi",
+      "battery_life": "3 hours"
+    },
+    {
+      "id": 19,
+      "title": "Electric Toothbrush",
+      "description": "Advanced electric toothbrush for effective oral care.",
+      "category": "electronics",
+      "price": 69.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71p9JkXlJvL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/913W8jvkyfL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81FecHoxRsL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/811vDeHwJ9L._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.5,
+        "count": 6692
+      },
+      "brand": "Oral-B",
+      "brushing_modes": [
+        "Clean",
+        "Whitening",
+        "Sensitive"
+      ],
+      "timer": true,
+      "color": "Blue"
+    },
+    {
+      "id": 20,
+      "title": "Indoor Plant Set",
+      "description": "Assortment of low-maintenance indoor plants.",
+      "category": "Home",
+      "price": 39.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71cyN4RtLrL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71qO1o6wYuL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71G3FVDaxyL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61U-AmBZvGL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.8,
+        "count": 4953
+      },
+      "brand": "Greenspaces",
+      "plants_included": [
+        "Snake Plant",
+        "Pothos",
+        "Succulent"
+      ],
+      "pot_material": "Ceramic",
+      "pot_color": "Assorted"
+    },
+    {
+      "id": 21,
+      "title": "Smart Doorbell Camera",
+      "description": "Monitor your doorstep with this video doorbell.",
+      "category": "wireless tech",
+      "price": 149.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/41ZEK0ptCZL._SY780_.jpg",
+        "https://m.media-amazon.com/images/I/21DXN9ORm2L._SY350_.jpg",
+        "https://m.media-amazon.com/images/I/51+MUqD0ATL._SY780_.jpg",
+        "https://m.media-amazon.com/images/I/51UxK1Bf1NL._SY780_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 5415
+      },
+      "brand": "Ring",
+      "video_resolution": "1080p",
+      "field_of_view": "160 degrees",
+      "connectivity": "Wi-Fi"
+    },
+    {
+      "id": 22,
+      "title": "Electric Standing Desk",
+      "description": "Adjustable standing desk for ergonomic workspace setup.",
+      "category": "electronics",
+      "price": 349.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/811+H4DJyoL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81kBgMItYDL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71NMYeElL8L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81DOgF-4MGL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.6,
+        "count": 4614
+      },
+      "brand": "Vari",
+      "adjustable_height": true,
+      "max_height": "50 inches",
+      "color": "Black"
+    },
+    {
+      "id": 23,
+      "title": "Instant Pot",
+      "description": "Multi-functional pressure cooker for quick and easy meals.",
+      "category": "Home",
+      "price": 79.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/61JaLu6cWfL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71dZP60MELL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71i8pUzxpLL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 495
+      },
+      "brand": "Instant Pot",
+      "cooking_modes": [
+        "Pressure Cook",
+        "Slow Cook",
+        "Steam"
+      ],
+      "capacity": "6 quarts",
+      "color": "Stainless Steel"
+    },
+    {
+      "id": 24,
+      "title": "Outdoor Backpack",
+      "description": "Durable backpack for outdoor adventures and travel.",
+      "category": "clothing",
+      "price": 89.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71PLevMOhVL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71h6saHaC8L._AC_UY200_.jpg",
+        "https://m.media-amazon.com/images/I/71n6hnRjwxL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/718mBVrRyML._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 4.5,
+        "count": 4236
+      },
+      "brand": "Osprey",
+      "capacity": "40 liters",
+      "waterproof": true,
+      "color": "Green"
+    },
+    {
+      "id": 25,
+      "title": "Home Security Camera System",
+      "description": "Comprehensive home security camera system with multiple cameras.",
+      "category": "Home",
+      "price": 299.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71ZJIvEMRxL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81p0tQZYg2L._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81OOWGuV8HL._AC_UF350,350_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 5983
+      },
+      "brand": "Arlo",
+      "number_of_cameras": 4,
+      "resolution": "1080p",
+      "night_vision": true
+    },
+    {
+      "id": 26,
+      "title": "Portable Bluetooth Speaker",
+      "description": "Compact speaker for music on the go.",
+      "category": "wireless tech",
+      "price": 49.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/41hdqR0-58L._AC_SY1000_.jpg",
+        "https://m.media-amazon.com/images/I/311HcPDg8ZL._AC_SY350_.jpg",
+        "https://m.media-amazon.com/images/I/41twOW1hMpL._AC_SY1000_.jpg",
+        "https://m.media-amazon.com/images/I/419tViZriBL._AC_SY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 4.3,
+        "count": 5464
+      },
+      "brand": "JBL",
+      "output_power": "10W",
+      "battery_life": "8 hours",
+      "color": "Yellow"
+    },
+    {
+      "id": 27,
+      "title": "Cookware Set",
+      "description": "Complete set of high-quality cookware for your kitchen.",
+      "category": "Home",
+      "price": 199.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71oGjxpYBGL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71uDJu27iqL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81avGtVVz+L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71YQEqfP+oL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.6,
+        "count": 873
+      },
+      "brand": "Calphalon",
+      "pieces_included": 10,
+      "material": "Stainless Steel"
+    },
+    {
+      "id": 28,
+      "title": "Fitness Resistance Bands Set",
+      "description": "Set of versatile resistance bands for home workouts.",
+      "category": "Fitness",
+      "price": 29.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/81LLONLLdSL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81wuhJY1F9L._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71iwNtLnfWL._AC_UF350,350_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.3,
+        "count": 576
+      },
+      "brand": "Fit Simplify",
+      "levels_of_resistance": [
+        "Light",
+        "Medium",
+        "Heavy"
+      ],
+      "material": "Latex",
+      "color": "Assorted"
+    },
+    {
+      "id": 29,
+      "title": "Ergonomic Office Chair",
+      "description": "Comfortable and supportive chair for productive work.",
+      "category": "Office",
+      "price": 249.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71054Jp-3FL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/718MN2CJInL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81jwJo0napL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 873
+      },
+      "brand": "Herman Miller",
+      "adjustable_height": true,
+      "lumbar_support": true,
+      "color": "Black"
+    },
+    {
+      "id": 30,
+      "title": "Wireless Charging Stand",
+      "description": "Charging stand for wireless charging of devices at a convenient angle.",
+      "category": "wireless tech",
+      "price": 39.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/61yG2IfcVVL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/7120nbtQxxL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61E+8sx+GKL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.5,
+        "count": 5497
+    },
+      "brand": "Belkin",
+      "compatibility": "Qi-enabled devices",
+      "color": "Silver"
+    },
+    {
+      "id": 31,
+      "title": "Drip Coffee Maker",
+      "description": "Classic drip coffee maker for brewing your favorite coffee.",
+      "category": "Home",
+      "price": 49.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/51OnlqE2C2L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81WCLgv4xEL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61-S6YQzzqL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/513GPrK7PYL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.3,
+        "count": 644
+      },
+      "brand": "Cuisinart",
+      "capacity": "12 cups",
+      "color": "Stainless Steel"
+    },
+    {
+      "id": 32,
+      "title": "Wireless Sport Earbuds",
+      "description": "Sweat-resistant earbuds for active workouts.",
+      "category": "wireless tech",
+      "price": 79.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71G9a1iSpHL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71SsW4AQEsL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71pgeU+fsFL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71A4vJuSJuL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.4,
+        "count": 6949
+      },
+      "brand": "Bose",
+      "connectivity": "Bluetooth",
+      "battery_life": "10 hours",
+      "color": "Blue"
+    },
+    {
+      "id": 33,
+      "title": "Garden Tool Set",
+      "description": "Complete set of gardening tools for tending to your garden.",
+      "category": "Home",
+      "price": 59.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71at0tbd6LL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71SWK6hmwTL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71i4X1-ZBVL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61HVN7AIBFL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.1,
+        "count": 4935
+      },
+      "brand": "Fiskars",
+      "tools_included": [
+        "Trowel",
+        "Pruners",
+        "Cultivator",
+        "Weeder"
+      ],
+      "material": "Stainless Steel"
+    },
+    {
+      "id": 34,
+      "title": "Solar-Powered Outdoor Lights",
+      "description": "Set of energy-efficient outdoor lights powered by solar panels.",
+      "category": "electronics",
+      "price": 29.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/81c+ucw60mL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71Tg32mUZrL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81uH8S1L2ML._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81+Haa8xXHL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.4,
+        "count": 4956
+      },
+      "brand": "URPOWER",
+      "number_of_lights": 6,
+      "light_color": "Warm White",
+      "waterproof": true
+    },
+    {
+      "id": 35,
+      "title": "Fitness Exercise Ball",
+      "description": "Stability ball for core workouts and stretching.",
+      "category": "Fitness",
+      "price": 19.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/61vbu97lHCL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81LcVoT3uAL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71imDEq1kEL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/713YS99mACL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.3,
+        "count": 5489
+      },
+      "brand": "Trideer",
+      "size": "65 cm",
+      "material": "Anti-burst PVC",
+      "color": "Blue"
+    },
+    {
+      "id": 36,
+      "title": "Bluetooth Karaoke Microphone",
+      "description": "Wireless microphone for karaoke and music enjoyment.",
+      "category": "wireless tech",
+      "price": 39.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71XKwMZP3-L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71SPeDXYDwL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71rFJUarbkL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71hTeVSrnBL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 3.8,
+        "count": 2883
+      },
+      "brand": "BONAOK",
+      "connectivity": "Bluetooth",
+      "color": "Rose Gold"
+    },
+    {
+      "id": 37,
+      "title": "Digital Drawing Tablet",
+      "description": "High-precision drawing tablet for digital artists.",
+      "category": "electronics",
+      "price": 199.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/61OG+NXByfL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81oGtOS79DL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71Nes9Vm+XL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71ET1P9G2lL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.6,
+        "count": 1833
+      },
+      "brand": "Wacom",
+      "active_area": "10 x 6 inches",
+      "pen_pressure_levels": 8192,
+      "connectivity": "USB, Bluetooth"
+    },
+    {
+      "id": 38,
+      "title": "Reusable Water Bottle",
+      "description": "Eco-friendly water bottle for staying hydrated on the go.",
+      "category": "bottles",
+      "price": 19.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/41zFoPMAJOL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61gmZXCnBAL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/41K9lArFXrL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61zzRrgVOyL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.5,
+        "count": 5463
+      },
+      "brand": "Hydro Flask",
+      "capacity": "32 oz",
+      "material": "Stainless Steel",
+      "color": "Midnight Black"
+    },
+    {
+      "id": 39,
+      "title": "Home Theater Projector",
+      "description": "Create a cinematic experience at home with this HD projector.",
+      "category": "electronics",
+      "price": 299.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71EL5jIMgGL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71yZyoNem9L._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71udDo4AFYL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61xo3dhTFeL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.4,
+        "count": 846
+      },
+      "brand": "Epson",
+      "resolution": "1080p",
+      "brightness": "3000 lumens"
+    },
+    {
+      "id": 40,
+      "title": "Cordless Vacuum Cleaner",
+      "description": "Powerful cordless vacuum for efficient cleaning.",
+      "category": "Home",
+      "price": 179.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71gK3qvN3eL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/816tkkuewWL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71iwu-oYl1L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61vwcvgnAdL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 2.9,
+        "count": 546
+      },
+      "brand": "Dyson",
+      "battery_life": "40 minutes",
+      "attachments": [
+        "Crevice tool",
+        "Soft dusting brush"
+      ],
+      "color": "Iron"
+    },
+    {
+      "id": 41,
+      "title": "Fitness Jump Rope",
+      "description": "Adjustable jump rope for cardio workouts.",
+      "category": "Fitness",
+      "price": 14.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/812RmJRSKML._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71do28L8mfL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/613tJfibrFL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71w7Kq0l0oL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4,
+        "count": 543
+      },
+      "brand": "Survival and Cross",
+      "adjustable_length": true,
+      "material": "Steel cable",
+      "color": "Orange"
+    },
+    {
+      "id": 42,
+      "title": "Smart Wi-Fi Plug",
+      "description": "Control your devices remotely with this smart plug.",
+      "category": "wireless tech",
+      "price": 24.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/51FBwIGdfRS._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61+Eamx-slS._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71Tix5z4yXL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71dygrb4i1L._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.4,
+        "count": 2975
+      },
+      "brand": "TP-Link",
+      "compatibility": "iOS, Android",
+      "voice_control": true,
+      "color": "White"
+    },
+    {
+      "id": 43,
+      "title": "Bluetooth Keyboard",
+      "description": "Wireless keyboard for comfortable typing on various devices.",
+      "category": "wireless tech",
+      "price": 49.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/61hQCJEGqhL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71HX-J9GzBL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61PY0PVvE3L._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61k1G3R9r+L._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 3.5,
+        "count": 5463
+      },
+      "brand": "Logitech",
+      "connectivity": "Bluetooth",
+      "compatible_devices": [
+        "PC",
+        "Mac",
+        "Tablet"
+      ],
+      "color": "Gold"
+    },
+    {
+      "id": 44,
+      "title": "Resistance Band Set",
+      "description": "Set of resistance bands for versatile strength training.",
+      "category": "Fitness",
+      "price": 34.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71AzLWKlU3L._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81zwaj+OjXL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/714cIhQ6qdL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71GLd8T-0DL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 2.8,
+        "count": 5469
+      },
+      "brand": "FITFORT",
+      "levels_of_resistance": [
+        "Light",
+        "Medium",
+        "Heavy"
+      ],
+      "material": "Latex",
+      "color": "Assorted"
+    },
+    {
+      "id": 45,
+      "title": "Smart Wi-Fi Light Bulb",
+      "description": "Control your lighting with this smart LED light bulb.",
+      "category": "electronics",
+      "price": 19.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/51uI+8gsZWL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61ezQ3ifnHL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61BmaGS9DuL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/51KazLZnWzL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 3.4,
+        "count": 379
+      },
+      "brand": "LIFX",
+      "compatibility": "iOS, Android",
+      "color_options": [
+        "Warm White",
+        "Cool White",
+        "RGB"
+      ],
+      "color": "White"
+    },
+    {
+      "id": 46,
+      "title": "Wireless Charging Mouse Pad",
+      "description": "Mouse pad with built-in wireless charging for your devices.",
+      "category": "wireless tech",
+      "price": 29.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/715gjDCS22L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81A96cY6mwL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81AYBNKSK3L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81SqDEbpwlL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.2,
+        "count": 6463
+      },
+      "brand": "Logitech",
+      "wireless_charging_standard": "Qi",
+      "color": "Gray"
+    },
+    {
+      "id": 47,
+      "title": "Camping Tent",
+      "description": "Spacious tent for outdoor camping adventures.",
+      "category": "Outdoors",
+      "price": 149.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/614W3BS3uAL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71jXxjaiCKL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71Gqhs7dX+L._AC_UF1000,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71yRetmIOhL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.8,
+        "count": 5345
+      },
+      "brand": "Coleman",
+      "capacity": "6 people",
+      "waterproof": true,
+      "color": "Blue"
+    },
+    {
+      "id": 48,
+      "title": "Smart Home Security System",
+      "description": "Complete smart security system for your home.",
+      "category": "Home",
+      "price": 399.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/31iNyKUMdGL._SY1000_.jpg",
+        "https://m.media-amazon.com/images/I/21fgp1GR++L._SY1000_.jpg",
+        "https://m.media-amazon.com/images/I/41wst9DwFdL._SY1000_.jpg",
+        "https://m.media-amazon.com/images/I/41UFWFZdpML._SY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 1142
+      },
+      "brand": "SimpliSafe",
+      "components_included": [
+        "Motion sensor",
+        "Door/window sensor",
+        "Base station"
+      ],
+      "connectivity": "Wi-Fi",
+      "color": "White"
+    },
+    {
+      "id": 49,
+      "title": "Fitness Tracker Smartwatch",
+      "description": "Smartwatch with fitness tracking and health monitoring features.",
+      "category": "Fitness",
+      "price": 129.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/71L56An9FsL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81vYHtl-eYL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71nII+S4EAL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71ajnxo6ekL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.6,
+        "count": 795
+      },
+      "brand": "Garmin",
+      "activities_tracked": [
+        "Steps",
+        "Heart rate",
+        "Sleep"
+      ],
+      "waterproof": true,
+      "color": "Copper"
+    },
+    {
+      "id": 50,
+      "title": "Bluetooth Car Speakerphone",
+      "description": "Hands-free car speakerphone for safer driving.",
+      "category": "electronics",
+      "price": 39.99,
+      "images": [
+        "https://m.media-amazon.com/images/I/91Mqkf4WNfL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81yGIxsaJ8L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71rBAPu14YL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81s-RcsGKSL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71pXC3r74lL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81tv8LkvF8L._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate":4.2,
+        "count": 1793
+      },
+      "brand": "Jabra",
+      "connectivity": "Bluetooth",
+      "battery_life": "20 hours",
+      "color": "Black"
+    },
+    {
+      "id": 51,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/81pvldjcHqL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71WTRt7RrPL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/81aB7UtoMeL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/91+nz4CnqwL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 52,
+      "title": "Mens Casual Premium Slim Fit T-Shirts ",
+      "price": 22.3,
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/61K+zZOdPWL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71FX9oKGI-L._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/6152Bvy5dEL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71TiFCEzJLL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 4.1,
+        "count": 259
+      }
+    },
+    {
+      "id": 53,
+      "title": "Mens Cotton Jacket",
+      "price": 55.99,
+      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/71K07RyR8wL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/81WGpEYUeKL._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/81k6lCur5mL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71jUFQeAFbL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 500
+      }
+    },
+    {
+      "id": 54,
+      "title": "Mens Casual Slim Fit",
+      "price": 15.99,
+      "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/51zmgtPYeHL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/519BPfC1xlL._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/510YYn+OInL._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/519y0TA5grL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 2.1,
+        "count": 430
+      }
+    },
+    {
+      "id": 55,
+      "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "price": 695,
+      "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+      "category": "jewelery",
+      "images": [
+        "https://m.media-amazon.com/images/I/51tUjVZC0zL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/61RTZ783qIL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/81C-gKm-Q+L._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 4.6,
+        "count": 400
+      }
+    },
+    {
+      "id": 56,
+      "title": "Solid Gold Petite Micropave ",
+      "price": 168,
+      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "category": "jewelery",
+      "images": [
+        "https://m.media-amazon.com/images/I/611J+Ptmh2L._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/714BY5yPRzL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71qwl8pi+5L._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71W9xFLFztL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 3.9,
+        "count": 70
+      }
+    },
+    {
+      "id": 57,
+      "title": "White Gold Plated Princess",
+      "price": 9.99,
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "images": [
+        "https://m.media-amazon.com/images/I/81J5zC5vAAS._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/91QRhM30qGS._AC_UY300_.jpg",
+        "https://m.media-amazon.com/images/I/71cHntOjo5S._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/810H7vmAi1S._AC_UL1500_.jpg"
+    ],
+      "rating": {
+        "rate": 3,
+        "count": 400
+      }
+    },
+    {
+      "id": 58,
+      "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "price": 10.99,
+      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+      "category": "jewelery",
+      "images": [
+        "https://m.media-amazon.com/images/I/413i9Bze8-L._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/41D8yXYza6L._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/61FImxoBruL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 1.9,
+        "count": 100
+      }
+    },
+    {
+      "id": 59,
+      "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "price": 64,
+      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+      "category": "electronics",
+      "images": [
+        "https://m.media-amazon.com/images/I/51Vx3HTs-wL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71ZFkLHFR2L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/919OaQdoSOL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/810x-2u1bkL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 3.3,
+        "count": 203
+      }
+    },
+    {
+      "id": 60,
+      "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "price": 109,
+      "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+      "category": "electronics",
+      "images": [
+        "https://m.media-amazon.com/images/I/61P39LA75pL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61mExYRV6mL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61mFVC8rScL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71E8rhUWnsL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 2.9,
+        "count": 470
+      }
+    },
+    {
+      "id": 61,
+      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "price": 109,
+      "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+      "category": "electronics",
+      "images": [
+        "https://m.media-amazon.com/images/I/71X0gCT-RHL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71A9XKhMBSL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71eX2LDpmAL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71bnajozFRL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.8,
+        "count": 319
+      }
+    },
+    {
+      "id": 62,
+      "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "price": 114,
+      "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+      "category": "electronics",
+      "images": [
+        "https://m.media-amazon.com/images/I/41cyZi+mzSL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/51szLKB58lL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61y6n6GIfoL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61ZvoWAp-iS._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 4.8,
+        "count": 400
+      }
+    },
+    {
+      "id": 63,
+      "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "price": 599,
+      "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+      "category": "electronics",
+      "images": [
+        "https://m.media-amazon.com/images/I/81QpkIctqPL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71GbO41HbYL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/71xb7GDuAGL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/51A1kQvFNaL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 2.9,
+        "count": 250
+      }
+    },
+    {
+      "id": 64,
+      "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+      "price": 999.99,
+      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+      "category": "electronics",
+      "images": [
+        "https://m.media-amazon.com/images/I/71UUlpk7q6L._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/81UPseFBYjL._AC_UF350,350_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/61nJZO-iRmL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "https://m.media-amazon.com/images/I/811YbMAxJdL._AC_UF894,1000_QL80_FMwebp_.jpg"
+    ],
+      "rating": {
+        "rate": 2.2,
+        "count": 140
+      }
+    },
+    {
+      "id": 65,
+      "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "price": 56.99,
+      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/71qfBK45qbL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71aaUg8w+-L._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/61RAGU0CiOL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71690AAX-hL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 2.6,
+        "count": 235
+      }
+    },
+    {
+      "id": 66,
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price": 29.95,
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/71VlXD3uFSL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71uE1qpewSL._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/71cBSLsfigL._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/71EPsYrtrqL._AC_UY350_.jpg"
+    ],
+      "rating": {
+        "rate": 2.9,
+        "count": 340
+      }
+    },
+    {
+      "id": 67,
+      "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "price": 39.99,
+      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/71WobrULpmS._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71ZhAI6V0LS._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/61A0CfmVwRS._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/81GjUrH4ivL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 3.8,
+        "count": 679
+      }
+    },
+    {
+      "id": 68,
+      "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+      "price": 9.85,
+      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/71UfMKUCI4L._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/81RI7SGx5fL._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/71IJJ6umddL._AC_UY350_.jpg"
+    ],
+      "rating": {
+        "rate": 4.7,
+        "count": 130
+      }
+    },
+    {
+      "id": 69,
+      "title": "Opna Women's Short Sleeve Moisture",
+      "price": 7.95,
+      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/51+7m7OxvOL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/71asFB1x3PL._AC_UY350_.jpg"
+    ],
+      "rating": {
+        "rate": 4.5,
+        "count": 146
+      }
+    },
+    {
+      "id": 70,
+      "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "price": 12.99,
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+      "category": "clothing",
+      "images": [
+        "https://m.media-amazon.com/images/I/81ZudWlZ6SL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/91Zr6S6aDSL._AC_UY350_.jpg",
+        "https://m.media-amazon.com/images/I/81QyvVpeuIL._AC_UY1000_.jpg",
+        "https://m.media-amazon.com/images/I/61-qDkb18GL._AC_UY1000_.jpg"
+    ],
+      "rating": {
+        "rate": 3.6,
+        "count": 145
+      }
+    }
+  ]
+  
