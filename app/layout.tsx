@@ -2,6 +2,7 @@ import '@/src/styles/global.css';
 import { inter } from '@/src/component/fonts';
 import { Metadata } from 'next';
 import { Providers } from '@/app/providers';
+import { ClientWrapper } from "@/app/client-wrapper";
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <Providers>
-          {children}
+          <ClientWrapper>{children}</ClientWrapper>
         </Providers>
       </body>
     </html>
