@@ -4,7 +4,8 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",

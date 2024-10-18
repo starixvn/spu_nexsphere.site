@@ -24,3 +24,20 @@ It will create `node_module` folder in this all dependency files will be install
 ### Run Project in development mode:
 
 $ npm run dev
+
+Server MUST run at port 3000 (http://localhost:3000) to call API successfully.
+
+
+### Run unit test
+
+$ npm run test
+
+
+### Run unit test with coverage report
+
+$ npm run test:coverage
+
+
+### Accounts
+admin    | 123456
+user     | 123456

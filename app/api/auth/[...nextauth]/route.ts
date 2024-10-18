@@ -20,6 +20,9 @@ export const authOptions: AuthOptions = {
           if (username === "admin" && password === "123456") {
             return { id: "1", name: "Admin" };
           }
+          if (username === "user" && password === "123456") {
+            return { id: "2", name: "User" };
+          }
   
           return null;
         },
