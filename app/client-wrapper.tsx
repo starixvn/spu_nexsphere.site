@@ -2,10 +2,16 @@
 
 import { SessionProvider } from "next-auth/react";
 import { ReactNode } from "react";
+import { Session } from "next-auth";
 
-export function ClientWrapper({ children }: { children: ReactNode }) {
+interface ClientWrapperProps {
+  children: ReactNode;
+  session: Session | null;
+}
+
+export function ClientWrapper({ children, session }: ClientWrapperProps) {
   return (
-    <SessionProvider>
+    <SessionProvider session={session}>
       {children}
     </SessionProvider>
   );

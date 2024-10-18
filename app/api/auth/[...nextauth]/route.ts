@@ -18,8 +18,7 @@ export const authOptions: AuthOptions = {
           const { username, password } = credentials ?? {};
   
           if (username === "admin" && password === "123456") {
-            console.log('Login Success');
-            return { id: "1", name: "Admin User" };
+            return { id: "1", name: "Admin" };
           }
   
           return null;
@@ -28,6 +27,9 @@ export const authOptions: AuthOptions = {
     ],
     pages: {
       signIn: "/login",
+    },
+    session: {
+      strategy: "jwt", // Sử dụng JWT cho session
     },
     secret: process.env.NEXTAUTH_SECRET,
   };
