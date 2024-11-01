@@ -1,10 +1,9 @@
+import userservice from "@/src/services/userservice";
+import { CustomUser } from "@/src/type";
 import NextAuth, { AuthOptions, User } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-interface CustomUser extends User {
-    id: string;
-    name: string;
-}
+
 
 export const authOptions: AuthOptions = {
     providers: [
@@ -16,15 +15,8 @@ export const authOptions: AuthOptions = {
         },
         async authorize(credentials): Promise<CustomUser | null> {
           const { username, password } = credentials ?? {};
-  
-          if (username === "admin" && password === "123456") {
-            return { id: "1", name: "Admin" };
-          }
-          if (username === "user" && password === "123456") {
-            return { id: "2", name: "User" };
-          }
-  
-          return null;
+          
+          return await getUser(username, password);
         },
       }),
     ],
@@ -34,8 +26,30 @@ export const authOptions: AuthOptions = {
     session: {
       strategy: "jwt", // Sử dụng JWT cho session
     },
+    
     secret: process.env.NEXTAUTH_SECRET,
   };
   
+async function getUser(username: any, password: any) : Promise<CustomUser | null> {
+  let user;
+
+  if (username === "admin" && password === "123456") {
+    user = { id: "1", name: "Admin", token: "" };
+  }
+  if (username === "user" && password === "123456") {
+    user = { id: "2", name: "User", token: "" }
+  }
+
+  if(user){
+    const token = await userservice.authenticate(username, password);
+    if(token){
+      user.token = token;
+      return user;
+    }
+  }
+
+  return null;
+}
+
   const handler = NextAuth(authOptions);
   export { handler as GET, handler as POST };
