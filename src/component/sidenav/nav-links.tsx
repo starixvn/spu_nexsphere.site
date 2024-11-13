@@ -5,17 +5,17 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import links from '@/src/initial-data/links'; 
-
+import links from '@/src/initial-data/links';
+  
 
 export default function NavLinks() {
   const pathname = usePathname();
   const [openLink, setOpenLink] = useState<string | null>(null);
 
   useEffect(() => {
-    const activeLink = links.find(link => 
-        link.href === pathname || 
-        (link.subLinks && link.subLinks.some(subLink => pathname === subLink.href))
+    const activeLink = links.find(link =>
+      link.href === pathname ||
+      (link.subLinks && link.subLinks.some(subLink => pathname === subLink.href))
     );
     if (activeLink) {
       setOpenLink(activeLink.name);
@@ -28,7 +28,7 @@ export default function NavLinks() {
         const LinkIcon = link.icon;
         const isActive = pathname === link.href || (link.subLinks && link.subLinks.some(subLink => pathname === subLink.href));
         const isOpen = openLink === link.name;
-        
+
         return (
           <div key={link.name} className="w-full">
             <Link

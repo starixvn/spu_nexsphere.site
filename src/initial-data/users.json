@@ -1,0 +1,21 @@
+[
+    {
+      "name": "User",
+      "username": "user",
+      "email": "user@nextmail.com",
+      "password": "$2b$10$.pNWgSYrTJFj/w3pinE0heLndxyxMFY9Ap1S2u6dh8HTVDAiIXj1G",
+      "role": "user",
+      "permission": {
+        "dashboard/overview": "view",
+        "dashboard/statistics": "view",
+        "invoices": "view,create,full-access"
+      }
+    },
+    {
+      "name": "Admin",
+      "username": "admin",
+      "email": "admin@nextmail.com",
+      "password": "$2b$10$.pNWgSYrTJFj/w3pinE0heLndxyxMFY9Ap1S2u6dh8HTVDAiIXj1G",
+      "role": "admin"
+    }
+]
